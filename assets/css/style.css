@@ -53,11 +53,11 @@ h3 {
 /* header */
 
 #masthead {
-  position: fixed;
-  z-index: 99;
+  position: relative;
+  height: 90px;
   width: 100%;
-  margin: 0 0 30px;
-  overflow: auto;
+  margin: 0 0 60px;
+  overflow: visible;
   color: #fff;
   background: #fff;
   border-bottom: 2px solid #ccc;
@@ -79,7 +79,11 @@ h3 {
 
 nav ul li {
   float: right;
-  padding: 25px 30px;
+  padding: 10px;
+}
+
+li {
+  padding: 10px;
 }
 
 nav a {
@@ -121,8 +125,8 @@ h3, h2 {
 /* main */
 
 #main-container {
-  padding-top: 130px;
-  min-height: calc(100vh - 70px);
+  padding-top: 10px;
+
 }
 
 .main-section {
@@ -245,22 +249,40 @@ input[type=submit] {
   .sidebar {
     width: 100%;
   }
+/* unable to get masthead to cover the area of overflow*/
+
+  #masthead {
+    height: 120px;
+  }
 
 #logo {
   width: 100%;
   }
+
 .navbar-brand {
   width: 100%;
+  text-align: center;
+  position: relative;
+  float: none;
   }
+
 .auth-image {
-  min-width: 700px;
+  min-width: 500px;
   }
+
 .work {
   width: 500px;
   }
+
 .h1 {
   margin-top: 70px;
   }
+
+.h2 {
+  padding: 50px;
+  margin-top: 0px;
+}
+
 }
 
 /* for 768px*/
@@ -285,12 +307,13 @@ input[type=submit] {
   }
 }
 
-
-
 /* for 980px*/
 @media only sreen and (max-width: 960px) {
   .auth-image {
-    min-width: 700px; 
+    min-width: 500px; 
   }
+  .work {
+    width: 500px;
+    }
 }
 
